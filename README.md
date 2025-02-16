@@ -2,6 +2,8 @@
 
 C2Git is a covert command and control (C2) framework that uses Git repositories as a communication channel between the master and slave nodes. It provides a secure way to execute commands on remote systems while hiding the C2 traffic in legitimate-looking Git commits.
 
+![demo](https://github.com/nikallass/c2git/blob/main/demo.gif)
+
 ## Quick Start
 
 ### Installation
