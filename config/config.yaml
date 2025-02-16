@@ -1,0 +1,27 @@
+# Default configuration values
+slave_defaults:
+  linux_local_repo_path: "/tmp/c2git"
+  windows_local_repo_path: "C:\\Temp\\c2git"
+  heartbeat_interval: 10
+  jitter: 5
+
+master_defaults:
+  local_repo_path: "/tmp/c2git_master"
+  command_timeout: 60  # Command after this time considered failed
+  session_wait_time: 180  # After this time we consider the session dead 
+  job_refresh_rate: 1  # How often to refresh job status (seconds)
+  job_retry_count: 3  # Number of retries for failed job responses
+  job_retry_delay: 2  # Delay between job response retries (seconds)
+  crypto_iterations: 100000  # PBKDF2 iterations for key derivation
+
+# Repository configuration
+repo_user: "github_username"  # Required, can be overridden by C2GIT_REPO_USER env var
+repo_name: "github_reponame"  # Required, can be overridden by C2GIT_REPO_NAME env var
+github_token: "github_pat_11APITOKEN..."  # Can be overridden by C2GIT_GITHUB_TOKEN env var
+
+# Commit settings
+git_user_email: "slave@example.com"  # Required, can be overridden by C2GIT_GIT_USER_EMAIL env var
+git_user_name: "Slave Bot"  # Required, can be overridden by C2GIT_GIT_USER_NAME env var
+
+# Encryption settings
+encryption_key: "Encryption_KEY_KEEP_IT_SECRET!"  # Can be overridden by C2GIT_ENCRYPTION_KEY env var
