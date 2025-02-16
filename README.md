@@ -211,6 +211,9 @@ interact abc123def0
 - cryptography
 - prettytable
 
+## TODO
+- Proxy support from config.yaml (for now we can use `git config --global http.proxy http://proxy.host.net:8080` and `git config --global https.proxy http://proxy.host.net:8080`)
+
 ## Disclaimer
 
 This tool is for educational purposes only. Users are responsible for complying with applicable laws and regulations.
